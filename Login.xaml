@@ -1,0 +1,25 @@
+﻿<Page x:Class="Files.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Files"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Login">
+
+    <Grid Background="White">
+        <StackPanel HorizontalAlignment="Center" Height="366" VerticalAlignment="Center" Width="278">
+            <Label Content="Login" Height="35" FontSize="18" FontWeight="Bold" FontStyle="Italic" Width="62"/>
+            <Label Content="Ingresa tu usuario" Height="26" FontWeight="Normal" FontStyle="Italic"/>
+            <TextBox Name="txtUser" Height="26" Text="" TextWrapping="Wrap" Width="277"/>
+            <Label Content="" Height="47" FontWeight="Normal" FontStyle="Normal"/>
+            <Label Content="Ingresa tu contraseña" Height="26" FontWeight="Normal" FontStyle="Italic"/>
+            <PasswordBox Name="txtPassword" Height="26" Width="277"/>
+            <Label Content="" Height="47"/>
+            <Button Name="btnLogin" Content="Inicar sesión" Width="109" FontStyle="Normal" FontWeight="Bold" Click="BtnLogin_Click"/>
+            <Button Name="btnRegister" Content="Registrar" BorderBrush="White" Background="White" FontStyle="Italic" Width="109" Click="BtnRegister_Click"/>
+        </StackPanel>
+        <Button Name="btnAdmin" Content="Administrar" HorizontalAlignment="Left" Height="20" Margin="10,329,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontStyle="Italic" Background="White" BorderBrush="White" Click="BtnAdmin_Click"/>
+    </Grid>
+</Page>
